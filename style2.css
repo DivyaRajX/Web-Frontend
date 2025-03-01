@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#box1 {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(15, 14, 14);
+    height: 60px;
+    border-radius: 20px;
+    z-index: 9999; /* Ensures it's always on top */
+    display: flex;
+    align-items: center;
+}
+
+#parentBox {
+    display: flex;
+    margin-top: 70px; /* Space below fixed header */
+    height: calc(100vh - 70px); /* Prevents extra scroll */
+}
+
+#box2 {
+    background-color: rgb(15, 14, 14);
+    position: fixed;
+    left: 10px;
+    top: 70px;
+    height: calc(100vh - 80px);
+    width: 20em;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+#box3 {
+    background-color: rgb(15, 14, 14);
+    flex-grow: 1;
+    height: calc(100vh - 70px);
+    margin-left: 22em;
+    border-radius: 20px;
+    overflow-y: auto;
+    padding: 10px;
+    z-index: 10;
+    position: relative;
+}
+
+img {
+    height: 40px;
+    width: auto;
+    margin-left: 10px;
+}
