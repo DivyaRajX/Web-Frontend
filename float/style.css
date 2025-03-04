@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    height: 100%;
+    width: 90%;
+    max-width: 900px;
+}
+
+p{
+    margin: 20px;
+    
+}
+
+/* box with no float */
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 5%;
+    padding: 1em;
+}
+
+/* box with float */
+/* float jo hai view mai uper ho jata hai but positions pe peeche rhega */
+.box2{
+    margin: 15px;
+    float: left;
+    width: 150px;
+    height: 200px;
+    background: red;
+    border-radius: 5%;
+    padding: 1em;
+}
+
+.special{
+    background-color: rgba(226, 254, 100, 0.755);
+    padding: 10px;
+    color: purple;
+
+}
