@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    width: 100px;
+    height: 100px;
+}
+
+
+#posi_1{
+    position: static;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+
+#posi_2{
+    position: relative; /*works on parent*/
+    z-index: 1;
+    top: 30px;
+    left: 60px;
+    background-color: rgb(65, 214, 15);
+    height: 100px;
+    width: 100px;
+}
+
+#posi_3{
+    position:fixed; /* works on viewport*/
+    /* left: 120px; */
+    top: 0;
+    background-color: rgb(224, 182, 11);
+    height: 120px;
+    width: 800px;
+}
+
+#posi_4{
+    position: sticky;
+    background-color: rgb(120, 14, 207);
+    height: 200px;
+    width: 200px;
+}
+
+.break{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(14, 128, 227);
+}
